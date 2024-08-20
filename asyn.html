@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        #display {
+            position: relative;
+            top: 80px;
+            left: 150px;
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            width: 1000px;
+            justify-content: space-around;
+
+        }
+
+        .para {
+            border: 1px solid rgb(0, 251, 255);
+            width: 150px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 80px;
+            background-color: aliceblue
+        }
+
+        #display1 {
+            position: relative;
+            top: 80px;
+            left: 150px;
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            width: 1000px;
+            justify-content: space-around;
+
+        }
+
+        .values {
+            position: relative;
+            right: 130px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">SET THE FORMAT</h1>
+    <select name="" id="clock">
+        <option value="-" id="-">-</option>
+        <option value="12-hr-format" id="twelve">12-hr-format</option>
+        <option value="24-hr-format" id="four">24-hr-format</option>
+    </select>
+
+    <div id="display">
+        <h2 id="Hr" class="para">Hr <h4 id="thr" class="values"></h4>
+        </h2>
+        <h2 id="Min" class="para">Min <h4 id="tmin" class="values"></h4>
+        </h2>
+        <h2 id="Sec" class="para">Sec <h4 id="tsec" class="values"></h4>
+        </h2>
+        <h2 id="am/pm" class="para">AM/PM <h4 id="tam" class="values"></h4>
+        </h2>
+    </div>
+
+    <div id="display1">
+        <h2 id="Date" class="para">Date <h4 id="tdate" class="values"></h4>
+        </h2>
+        <h2 id="Month" class="para">Month <h4 id="tmonth" class="values"></h4>
+        </h2>
+        <h2 id="Year" class="para">Year <h4 id="tyear" class="values"></h4>
+        </h2>
+        <h2 id="Day" class="para">Day <h4 id="tday" class="values"></h4>
+        </h2>
+    </div>
+
+
+    <script src="../Js/test.js"></script>
+</body>
+
+</html>
